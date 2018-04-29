@@ -1,7 +1,9 @@
 require 'pry'
 def get_first_name_of_season_winner(data, season)
   # code here
-  data[season]
+  data[season].select do |item|
+      item["status"] == "Winner"
+  end
   binding.pry
 end
 
