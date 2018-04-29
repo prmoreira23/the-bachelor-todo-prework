@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
   data[season].select do |item|
       item["status"] == "Winner"
   end
-  binding.pry
+  # binding.pry
 end
 
 def get_contestant_name(data, occupation)
