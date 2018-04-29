@@ -38,7 +38,7 @@ end
 def get_average_age_for_season(data, season)
   # code here
   arr = data[season].collect do |item|
-      item["age"]
+      item["age"].to_i
   end
   arr.sum.fdiv(arr.size)
 end
