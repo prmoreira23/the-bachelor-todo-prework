@@ -43,5 +43,5 @@ def get_average_age_for_season(data, season)
   i = arr.size
   arr.join("+")
   binding.pry
-  eval(arr).fdiv()
+  eval(arr).fdiv(i)
 end
