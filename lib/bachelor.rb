@@ -8,8 +8,10 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  data.select do |key, value|
-      
+  data.each do |season, contestants|
+      contestants.each do |contestant|
+          return contestant["name"] if contestant["occupation"] == occupation
+      end
   end
 end
 
